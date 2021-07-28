@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import {Link} from "react-router-dom"
 
 export default function Navbar(props) {
     const [navbarOpen,
@@ -10,13 +10,13 @@ export default function Navbar(props) {
             className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
             <div
                 className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
-                
+
                 <a
                     className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                     href="../../index.html">
                     OSAAS
                 </a>
-                
+
                 <button
                     className="mobile-menu-button p-4 focus:outline-none md:hidden"
                     onClick={() => {
@@ -89,28 +89,34 @@ export default function Navbar(props) {
                         <li className="items-center">
                             <Link
                                 to="/dashboard"
-                                className={title==="Dashboard"?"text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600":"text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
+                                className={title === "Dashboard"
+                                ? "text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600"
+                                : "text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
                                 <i className="fas fa-tv mr-2 text-sm opacity-75"></i>
                                 Dashboard
                             </Link>
                         </li>
 
                         <li className="items-center">
-                        <Link
+                            <Link
                                 to="/agents"
-                                className={title==="Agents"?"text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600":"text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
+                                className={title === "Agents"
+                                ? "text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600"
+                                : "text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
                                 <i className="fas fa-tv mr-2 text-sm opacity-75"></i>
                                 Agents
                             </Link>
                         </li>
 
                         <li className="items-center">
-                            <a
-                                href="./tables.html"
-                                className="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500">
-                                <i className="fas fa-table mr-2 text-sm text-blueGray-300"></i>
-                                Tables
-                            </a>
+                            <Link
+                                to="/orders"
+                                className={title === "Orders"
+                                ? "text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600"
+                                : "text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
+                                <i className="fas fa-tv mr-2 text-sm opacity-75"></i>
+                                Orders
+                            </Link>
                         </li>
 
                         <li className="items-center">

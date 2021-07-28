@@ -15,6 +15,7 @@ import Services from './components/Services';
 import Footer from './components/Footer';
 import Dashboard from './components/dashboard/Dashboard';
 import Agents from './components/dashboard/Agents';
+import Orders from './components/dashboard/Orders';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/agents">
           <Agents />
+        </Route>
+        <Route path="/orders">
+          <Orders />
         </Route>
         <Route path="/">
           <Navbar />
