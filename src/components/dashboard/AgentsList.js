@@ -1,13 +1,21 @@
 import React, {useState} from 'react'
-import {StatusOnlineIcon, StatusOfflineIcon, BriefcaseIcon} from '@heroicons/react/solid'
+import {StatusOnlineIcon, StatusOfflineIcon, BriefcaseIcon,PencilIcon} from '@heroicons/react/solid'
 
 import AgentsAddModal from './AgentsAddModal';
+import AgentsEditModal from './AgentsEditModal';
 
 export default function AgentsList() {
     const [showModal,
         setShowModal] = useState(false);
     const handleSubmit = () => {
         setShowModal(true)
+
+    }
+
+    const [showEditModal,
+        setShowEditModal] = useState(false);
+    const handleEditSubmit = () => {
+        setShowEditModal(true)
 
     }
 
@@ -36,6 +44,11 @@ export default function AgentsList() {
                     {showModal
                         ? <AgentsAddModal showModal={showModal} setShowModal={setShowModal}/>
                         : null}
+                    
+                    {showEditModal
+                        ? <AgentsEditModal showModal={showEditModal} setShowModal={setShowEditModal}/>
+                        : null}
+
                     <div className="p-4 flex-auto">
                         {/* <!-- Chart --> */}
                         <div className="block w-full overflow-x-auto ">
@@ -66,6 +79,10 @@ export default function AgentsList() {
                                         <th
                                             className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                             Status
+                                        </th>
+                                        <th
+                                            className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                            Edit
                                         </th>
                                     </tr>
                                 </thead>
@@ -108,7 +125,14 @@ export default function AgentsList() {
                                                 className="bg-gray-500 hover:bg-gray-700 text-white font-bold rounded-full p-1 ml-2">
                                                 <BriefcaseIcon className="text-white h-5 w-5"/>
                                             </button>
+                                            </td>
                                         </td>
+                                        <td
+                                            className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                            <button
+                                                className="bg-gray-500 hover:bg-gray-700 text-white font-bold rounded-full p-1 ml-2" onClick={handleEditSubmit}>
+                                                <PencilIcon className="text-white h-5 w-5"/>
+                                            </button>
                                         </td>
                                     </tr>)}
                                 </tbody>

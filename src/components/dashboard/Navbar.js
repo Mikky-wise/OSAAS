@@ -120,6 +120,17 @@ export default function Navbar(props) {
                         </li>
 
                         <li className="items-center">
+                            <Link
+                                to="/feedback"
+                                className={title === "Feedback"
+                                ? "text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600"
+                                : "text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
+                                <i className="fas fa-tv mr-2 text-sm opacity-75"></i>
+                                Feedback
+                            </Link>
+                        </li>
+
+                        <li className="items-center">
                             <a
                                 href="./maps.html"
                                 className="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500">
