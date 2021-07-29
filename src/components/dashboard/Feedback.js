@@ -1,5 +1,4 @@
 import React from 'react'
-import {TicketIcon, LockOpenIcon, LockClosedIcon} from "@heroicons/react/solid"
 import Navbar from './Navbar'
 import NavHeader from './NavHeader'
 import Header from './Header'

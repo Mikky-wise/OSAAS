@@ -25,7 +25,9 @@ export default function FeedbackData() {
                                 </div>
                             </div>
                         </div>
-                        {showModal?<FeedbackModal setShowModal={setShowModal}/>:null}
+                        {showModal
+                            ? <FeedbackModal setShowModal={setShowModal}/>
+                            : null}
                         <table
                             className="items-center w-full bg-transparent border-collapse table-auto">
                             <thead>
@@ -73,7 +75,10 @@ export default function FeedbackData() {
                                     </td>
                                     <td
                                         className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                        <a href="#" onClick={handleSubmit} class="content-end bg-gradient-to-br from-indigo-700 to-indigo-900 hover:from-indigo-700 hover:to-indigo-700 font-semibold rounded-lg py-2 px-5 text-white">Reply</a>
+                                        <a
+                                            href="#"
+                                            onClick={handleSubmit}
+                                            class="content-end bg-gradient-to-br from-indigo-700 to-indigo-900 hover:from-indigo-700 hover:to-indigo-700 font-semibold rounded-lg py-2 px-5 text-white">Reply</a>
                                     </td>
                                 </tr>)}
                             </tbody>

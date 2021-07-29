@@ -13,7 +13,7 @@ export default function Settings() {
                 <NavHeader title="Profile Settings"/>
                 <Header card_data={[]}/>
                 <div className="flex flex-wrap">
-                <SettingsForm/>
+                    <SettingsForm/>
                 </div>
             </div>
         </div>

@@ -28,9 +28,10 @@ export default function FeedbackModal(props) {
                                     Query
                                 </label>
                                 <label class="block text-gray-700 text-sm mb-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
                                 </label>
-                                
+
                             </div>
                             <div class="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="reply">
@@ -42,8 +43,7 @@ export default function FeedbackModal(props) {
                                     type="textarea"
                                     placeholder="Enter you reply here ..."/>
                             </div>
-                            
-                            
+
                             <div class="flex items-center justify-between">
                                 <button
                                     class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

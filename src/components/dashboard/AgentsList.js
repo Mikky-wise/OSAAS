@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {StatusOnlineIcon, StatusOfflineIcon, BriefcaseIcon,PencilIcon} from '@heroicons/react/solid'
+import {StatusOnlineIcon, StatusOfflineIcon, BriefcaseIcon, PencilIcon} from '@heroicons/react/solid'
 
 import AgentsAddModal from './AgentsAddModal';
 import AgentsEditModal from './AgentsEditModal';
@@ -19,7 +19,6 @@ export default function AgentsList() {
 
     }
 
-
     return (
         <div>
             <div className="w-full mb-12 xl:mb-0 px-4">
@@ -34,17 +33,20 @@ export default function AgentsList() {
                                 <h2 className="text-gray-700 text-xl font-semibold">
                                     Agents Status
                                 </h2>
-                                
+
                             </div>
                             <div className="">
-                                <a href="#" onClick={handleSubmit} class="content-end bg-gradient-to-br from-indigo-700 to-indigo-900 hover:from-indigo-700 hover:to-indigo-700 font-semibold rounded-lg py-2 px-5 text-white">Add Agent</a>
+                                <a
+                                    href="#"
+                                    onClick={handleSubmit}
+                                    class="content-end bg-gradient-to-br from-indigo-700 to-indigo-900 hover:from-indigo-700 hover:to-indigo-700 font-semibold rounded-lg py-2 px-5 text-white">Add Agent</a>
                             </div>
                         </div>
                     </div>
                     {showModal
                         ? <AgentsAddModal showModal={showModal} setShowModal={setShowModal}/>
                         : null}
-                    
+
                     {showEditModal
                         ? <AgentsEditModal showModal={showEditModal} setShowModal={setShowEditModal}/>
                         : null}
@@ -103,34 +105,37 @@ export default function AgentsList() {
                                         </td>
                                         <td
                                             className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                            {i} orders
+                                            {i}
+                                            orders
                                         </td>
                                         <td
                                             className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                            ${i*100} USD
+                                            ${i * 100}
+                                            USD
                                         </td>
                                         <td
                                             className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                             <td
-                                            className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                            <button
-                                                className="bg-green-500 hover:bg-green-700 text-white font-bold rounded-full p-1">
-                                                <StatusOnlineIcon className="text-white h-5 w-5"/>
-                                            </button>
-                                            <button
-                                                className="bg-red-500 hover:bg-red-700 text-white font-bold rounded-full p-1 ml-2">
-                                                <StatusOfflineIcon className="text-white h-5 w-5"/>
-                                            </button>
-                                            <button
-                                                className="bg-gray-500 hover:bg-gray-700 text-white font-bold rounded-full p-1 ml-2">
-                                                <BriefcaseIcon className="text-white h-5 w-5"/>
-                                            </button>
+                                                className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                                <button
+                                                    className="bg-green-500 hover:bg-green-700 text-white font-bold rounded-full p-1">
+                                                    <StatusOnlineIcon className="text-white h-5 w-5"/>
+                                                </button>
+                                                <button
+                                                    className="bg-red-500 hover:bg-red-700 text-white font-bold rounded-full p-1 ml-2">
+                                                    <StatusOfflineIcon className="text-white h-5 w-5"/>
+                                                </button>
+                                                <button
+                                                    className="bg-gray-500 hover:bg-gray-700 text-white font-bold rounded-full p-1 ml-2">
+                                                    <BriefcaseIcon className="text-white h-5 w-5"/>
+                                                </button>
                                             </td>
                                         </td>
                                         <td
                                             className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                             <button
-                                                className="bg-gray-500 hover:bg-gray-700 text-white font-bold rounded-full p-1 ml-2" onClick={handleEditSubmit}>
+                                                className="bg-gray-500 hover:bg-gray-700 text-white font-bold rounded-full p-1 ml-2"
+                                                onClick={handleEditSubmit}>
                                                 <PencilIcon className="text-white h-5 w-5"/>
                                             </button>
                                         </td>

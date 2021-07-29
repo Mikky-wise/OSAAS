@@ -28,51 +28,51 @@ export default function OrdersData() {
                             </div>
                         </div>
                         <table
-                                className="items-center w-full bg-transparent border-collapse table-auto">
-                                <thead>
-                                    <tr>
-                                        <th
-                                            className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                            Order Vendor
-                                        </th>
-                                        <th
-                                            className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                            From Location
-                                        </th>
-                                        <th
-                                            className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                            To Location
-                                        </th>
-                                        <th
-                                            className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                            Budget
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {[...Array(10)].map((x, i) => <tr key={i}>
+                            className="items-center w-full bg-transparent border-collapse table-auto">
+                            <thead>
+                                <tr>
+                                    <th
+                                        className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        Order Vendor
+                                    </th>
+                                    <th
+                                        className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        From Location
+                                    </th>
+                                    <th
+                                        className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        To Location
+                                    </th>
+                                    <th
+                                        className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        Budget
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {[...Array(10)].map((x, i) => <tr key={i}>
 
-                                        <th
-                                            className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                            Vendor Name
-                                        </th>
-                                        <td
-                                            className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                            Street, Area, City, 123456
-                                        </td>
-                                        <td
-                                            className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                            Street, Area, City, 123456
-                                        </td>
-                                        <td
-                                            className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                            $200 USD
-                                        </td>
-                                        
-                                    </tr>)}
-                                </tbody>
-                            </table>
-                        
+                                    <th
+                                        className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                                        Vendor Name
+                                    </th>
+                                    <td
+                                        className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                        Street, Area, City, 123456
+                                    </td>
+                                    <td
+                                        className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                        Street, Area, City, 123456
+                                    </td>
+                                    <td
+                                        className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                        $200 USD
+                                    </td>
+
+                                </tr>)}
+                            </tbody>
+                        </table>
+
                     </div>
                 </div>
             </div>

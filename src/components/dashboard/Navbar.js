@@ -131,7 +131,7 @@ export default function Navbar(props) {
                         </li>
 
                         <li className="items-center">
-                        <Link
+                            <Link
                                 to="/settings"
                                 className={title === "Settings"
                                 ? "text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600"

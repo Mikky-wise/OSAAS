@@ -1,5 +1,5 @@
 import React from 'react'
-import {BriefcaseIcon, ShoppingBagIcon,} from '@heroicons/react/solid'
+import {BriefcaseIcon, ShoppingBagIcon} from '@heroicons/react/solid'
 export default function SettingsForm() {
     return (
         <div class="px-4 md:px-10 mx-auto w-full -m-24">
@@ -156,7 +156,9 @@ export default function SettingsForm() {
                                                 type="text"
                                                 class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                                 rows="4">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                             </textarea >
                                         </div>
                                     </div>
@@ -207,22 +209,24 @@ export default function SettingsForm() {
                                 </h3>
                                 <div
                                     class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                                    
+
                                     Los Angeles, California
                                 </div>
                                 <div class="mb-2 text-blueGray-600 mt-10">
-                                    
+
                                     Solution Manager
                                 </div>
                                 <div class="mb-2 text-blueGray-600">
-                                    
+
                                     Courier Services
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>)}
+        </div>
+    )
+}
