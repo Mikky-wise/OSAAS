@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-
-import AgentsAddModal from './AgentsAddModal';
 import FeedbackModal from './FeedbackModal';
 
 export default function FeedbackData() {

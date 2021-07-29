@@ -131,12 +131,14 @@ export default function Navbar(props) {
                         </li>
 
                         <li className="items-center">
-                            <a
-                                href="./maps.html"
-                                className="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500">
-                                <i className="fas fa-map-marked mr-2 text-sm text-blueGray-300"></i>
-                                Maps
-                            </a>
+                        <Link
+                                to="/settings"
+                                className={title === "Settings"
+                                ? "text-xs uppercase py-3 font-bold block text-indigo-700 hover:text-indigo-600"
+                                : "text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"}>
+                                <i className="fas fa-tv mr-2 text-sm opacity-75"></i>
+                                Settings
+                            </Link>
                         </li>
                     </ul>
 

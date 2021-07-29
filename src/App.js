@@ -17,6 +17,7 @@ import Dashboard from './components/dashboard/Dashboard';
 import Agents from './components/dashboard/Agents';
 import Orders from './components/dashboard/Orders';
 import Feedback from './components/dashboard/Feedback';
+import Settings from './components/dashboard/Settings';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route path="/feedback">
           <Feedback />
+        </Route>
+        <Route path="/settings">
+          <Settings />
         </Route>
         <Route path="/">
           <Navbar />
