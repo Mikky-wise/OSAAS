@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import NavHeader from './NavHeader'
 import Header from './Header'
 import FeedbackData from './FeedbackData'
+import {TicketIcon, LockOpenIcon, LockClosedIcon} from '@heroicons/react/solid'
 
 export default function Feedback() {
     const card_data = [
